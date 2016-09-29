@@ -14,6 +14,6 @@ function maioridade(idade){
 	
 	return(idade >=18);
 }
-document.getElementById("demo").innerHTML = maioridade(idade);
+document.getElementById("demo").innerHTML = maioridade(setidade(30)) + " " + setidade(30);
 
 </script>
