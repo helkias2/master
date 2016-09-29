@@ -6,9 +6,10 @@
 function setidade(idade){
 	return idade;
 }
-//-----------
+//----------- passando o valor -------
 var idade =setidade(30);
 
+//------ verificacao do valor --------
 function maioridade(idade){
 	
 	return(idade >=18);
