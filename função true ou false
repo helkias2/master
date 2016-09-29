@@ -1,0 +1,18 @@
+<p id="demo"> </p>
+
+<script>
+
+//--- funcao -----
+function setidade(idade){
+	return idade;
+}
+//-----------
+var idade =setidade(30);
+
+function maioridade(idade){
+	
+	return(idade >=18);
+}
+document.getElementById("demo").innerHTML = maioridade(idade);
+
+</script>
