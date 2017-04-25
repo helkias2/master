@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SABESP</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="titulo">Sistema Sabesp</h2>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Minha Contas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>RGI</th>
+                        <th>Data Venc</th>
+                        <th>Faixa Consumo</th>
+                        <th>Consumo m3</th>
+                        <th>Total Conta</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-clientes">
+                    <tr class="cliente">
+                        <td class="info-nome">Paulo</td>
+                        <td class="info-rgi">100000/12</td>
+                        <td class="info-data">12/02/2017</td>
+                        <td class="info-faixaConsumo">0</td>
+                        <td class="info-consumoMetros">21</td>
+                        <td class="info-totalConta">0</td>
+
+                    <tr class="cliente">
+                        <td class="info-nome">João</td>
+                        <td class="info-rgi">100001/12</td>
+                        <td class="info-data">12/02/2017</td>
+                        <td class="info-faixaConsumo">0</td>
+                        <td class="info-consumoMetros">10</td>
+                        <td class="info-totalConta">0</td>
+                    </tr>
+
+                    <tr class="cliente">
+                        <td class="info-nome">Erica</td>
+                        <td class="info-rgi">100002/12</td>
+                        <td class="info-data">12/02/2017</td>
+                        <td class="info-faixaConsumo">0</td>
+                        <td class="info-consumoMetros">51</td>
+                        <td class="info-totalConta">0</td>
+                    </tr>
+
+                    <tr class="cliente">
+                        <td class="info-nome">Douglas</td>
+                        <td class="info-rgi">100003/12</td>
+                        <td class="info-data">12/02/2017</td>
+                        <td class="info-faixaConsumo">0</td>
+                        <td class="info-consumoMetros">40</td>
+                        <td class="info-totalConta">0</td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="info-nome">Tatiana</td>
+                        <td class="info-rgi">100004/12</td>
+                        <td class="info-data">12/02/2017</td>
+                        <td class="info-faixaConsumo">0</td>
+                        <td class="info-consumoMetros">26</td>
+                        <td class="info-totalConta">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+
+    <section class="container">
+        <h2 id="titulo-form">Adicionar novo paciente</h2>
+        <ul id="mensagens-erro">
+
+        </ul>
+        <form id="form-adiciona">
+            <div class="">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="digite o nome do seu cliente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="rgi">RGI:</label>
+                <input id="rgi" name="rgi" type="text" size="9" maxlength="9" placeholder="digite o rgi do seu Rgi" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="data">Data:</label>
+                <input id="data" name="data" type="text" size="10" maxlength="10" placeholder="digite a data" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="consumoMetros">Consumo m3:</label>
+                <input id="consumoMetro" type="text" placeholder="digite a consumo m3" class="campo campo-medio">
+            </div>
+            <button id="adicionar-cliente" class="botao bto-principal">Adicionar</button>
+        </form>
+    </section>
+    <script src="js/principal-sabesp.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
